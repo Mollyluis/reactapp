@@ -1,0 +1,78 @@
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+.appContainer{
+  max-width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.custom-btn {
+  background-color: #f7c6a3; 
+  color: white;
+  border: none; 
+  padding: 15px 32px; 
+  font-size: 18px;
+  cursor: pointer; 
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.custom-btn:hover {
+  background-color: #e7a18c;
+}
+
+.appContainer {
+  padding: 20px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.meal-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bg-hero {
+  background-image: url('./assets/woman.jpg');
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #899ba0;
+  padding: 150px 0;
+}
+
+.quotation{
+  font-family: "Space Grotesk", serif;
+}
+
+.quote-section{
+  background-color: #ecead0;
+  color: #548BB2;
+  border: 4px solid #548BB2;
+}
+
+.quotes-line{
+  max-width: 50px;
+  border: 2px solid #548BB2;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-slider{
+  width: 100%;
+}
+
+.slider-image{
+  object-fit: cover;
+
+}
