@@ -1,3 +1,4 @@
+
 body{
   font-family: "Montserrat", sans-serif;
 }
@@ -9,7 +10,8 @@ body{
 }
 
 .custom-btn {
-  background-color: #f7c6a3; 
+  background-color: #659DBF
+  ; 
   color: white;
   border: none; 
   padding: 15px 32px; 
@@ -20,7 +22,8 @@ body{
 }
 
 .custom-btn:hover {
-  background-color: #e7a18c;
+  background-color: #104f77
+  ;
 }
 
 .appContainer {
@@ -43,12 +46,12 @@ img {
 }
 
 .bg-hero {
-  background-image: url('./assets/woman.jpg');
+  background-image: url('src/assets/pexels-maksgelatin-4348589.jpg');
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
   background-color: #899ba0;
-  padding: 150px 0;
+  padding: 250px 0;
 }
 
 .quotation{
@@ -68,11 +71,40 @@ img {
   margin-left: auto;
 }
 
-.image-slider{
-  width: 100%;
-}
+
 
 .slider-image{
   object-fit: cover;
+  width: 100%;
 
+}
+
+.stopwatchbtn button{
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px 15px;
+  font-weight: 600;
+  
+}
+
+.stopwatchbtn{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  
+}
+
+.stopwatchsection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px; */
+  width: 100%;
+  
+}
+
+.mood-section{
+  background-color: #548BB2;
+  color: #ffffff;
 }

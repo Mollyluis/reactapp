@@ -24,23 +24,27 @@ function RecipeGenerator() {
     }
     return ingredients;
   };
+  
+
 
   return (
     <div>
-    <h4 className="text-center mb-3">Recipe Generator</h4>
-    <button className="custom-btn w-100 mb-3" onClick={fetchMeal}>
+    <h3 className="text-center mb-4">Recipe Generator</h3>
+    <button className="custom-btn w-100 mb-5" onClick={fetchMeal}>
         Get Random Meal
     </button>
     {meal && (
-        <div>
-        <h5 className="text-center">{meal.strMeal}</h5>
-        <img
-            className="img-fluid d-block mx-auto rounded mb-3"
-            src={meal.strMealThumb}
-            alt={meal.strMeal}
-        />
-        <div>
-            <div className="mb-3">
+        <div className="recipe-container">
+          <div className="row">
+            <div className="col-md-6">
+              <h4 className="text-center mb-3">{meal.strMeal}</h4>
+              <img
+              className="img-fluid d-block mx-auto rounded mb-3"
+              src={meal.strMealThumb}
+              alt={meal.strMeal}
+              />
+            </div>
+            <div className="col-md-6 mt-5">
               <h6>Ingredients:</h6>
               <ul>
                   {getIngredients(meal).map((ingredient, index) => (
@@ -48,16 +52,18 @@ function RecipeGenerator() {
                   ))}
               </ul>
             </div>
-            <div>
-              <h6>Preparation:</h6>
-              <p>{meal.strInstructions}</p>
+            <div className="col-md-12 d-flex justify-content-center mt-4">
+              <div className="text-center">
+                <h6>Preparation:</h6>
+                <p>{meal.strInstructions}</p>
+              </div>
             </div>
-        </div>
-        </div>
+          </div>
+        <div>
+      </div>
+      </div>
     )}
     </div>
-
-
   );
 }
 
